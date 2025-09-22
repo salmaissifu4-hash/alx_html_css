@@ -1,0 +1,43 @@
+/* Make <body> a flex container in column direction */
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* <main> should also be flex container, but in row direction */
+main {
+    display: flex;
+    flex-direction: row;
+    flex: auto; /* main grows automatically */
+}
+
+/* Article takes 2/3 of the width */
+article {
+    flex: 2;
+    overflow-y: auto;
+    padding: 1rem;
+}
+
+/* Aside takes 1/3 of the width */
+aside {
+    flex: 1;
+    overflow-y: auto;
+    padding: 1rem;
+}
+
+/* Optional: basic styling to distinguish sections */
+header, footer {
+    background: #333;
+    color: #fff;
+    padding: 1rem;
+    text-align: center;
+}
+
+article {
+    background: #fafafa;
+}
+
+aside {
+    background: #f0f0f0;
+}
