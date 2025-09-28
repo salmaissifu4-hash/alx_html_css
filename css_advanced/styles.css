@@ -1,0 +1,128 @@
+@font-face {
+    font-family: 'Source Sans Pro';
+    src: url('fonts/SourceSansPro-Regular.woff2') format('woff2'),
+         url('fonts/SourceSansPro-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+/*adjusted each section's font accordingly*/
+body {
+    margin: 0;
+    font-family: 'Source Sans Pro', Arial, sans-serif;
+}
+
+.background-container {
+    background-image: url('Images/image.png'); /* Remember to comfirm the accuracy of the image path*/
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
+}
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: transparent;
+}
+
+header nav img {
+    height: 40px;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+header nav ul li {
+    display: inline;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: #fff; /* Updated color to white */
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.background-image {
+    text-align: center;
+    padding: 100px 20px;
+    position: relative;
+    background: none; /* Remove background from this section */
+}
+
+.text-content {
+    position: relative;
+    z-index: 2;
+}
+
+.text-content h1 {
+    font-size: 160px;
+    margin: 0;
+}
+
+.text-content .slogan {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin: 20px 0;
+}
+
+.text-content .slogan span {
+    font-size: 21px;
+    font-weight: bold;
+}
+
+.text-content button {
+    padding: 10px 20px;
+    font-size: 19px;
+    font-weight:lighter;
+    margin-top: 20px;
+    background-color: #C271FF;
+    color: white;
+    border: none;
+    border-radius: 22px;
+    cursor: pointer;
+}
+
+.pro-section {
+    margin-top: 50px;
+}
+
+.pro-section h2 {
+    font-size: 2em;
+}
+
+.pro-cards {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.pro-card img {
+    height: 80px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.pro-card h3 {
+    margin: 10px 0 5px;
+    font-size: 1.5em;
+}
+
+.pro-card p {
+    margin: 0;
+    font-size: 1.3em;
+    
+}
+
+.highlight {
+    color: #C271FF;
+    font-size: 43px;
+    font-weight: bold;
+}
