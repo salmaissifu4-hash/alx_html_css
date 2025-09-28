@@ -141,22 +141,24 @@ header nav ul li a {
     display: flex; /* Flexbox for alignment */
     align-items: center; /* Center items vertically */
     max-width: 800px; /* Maximum width of the quote content */
-    margin: 0 auto; /* Center the content */
+    margin: 0 auto; /* Centered the content */
 }
 
 .quote-section .quote-content img {
     border-radius: 50%; /* Circular image */
     width: 100px; /* Image width */
     height: 100px; /* Image height */
-    margin-right: 20px; /* Space to the right of the image */
+    margin-right: 80px; /* Space to the right of the image */
+    margin-left: -200px;
 }
 
+
 .quote-section .quote-text {
-    text-align: left; /* Left align the text */
+    text-align: left; /* Left aligned the text */
 }
 
 .quote-section blockquote {
-    font-size: 1.2em; /* Font size for the quote */
+    font-size: 1.2em; /* Font size for the quote. Remember to convert this and all other fonts to pixel or choose a consistent format */
     font-style: italic; /* Italic style for the quote */
     margin: 0 0 10px 0; /* Margin around the quote */
 }
@@ -275,7 +277,6 @@ header nav ul li a {
 }
 
 .video-card .duration:before {
-    content: ''; /* Removed the dot before the duration */
     margin-right: 5px;
 }
 
@@ -348,7 +349,6 @@ header nav ul li a {
 /*This is the end of the Membership Section styling*/
 
 /* This is the beggining of the FAQ Section Styling */
-/* FAQ Section Styling */
 .faq-section {
     padding: 50px 20px; /* Padding around the content */
     text-align: center; /* Center align the text */
@@ -390,3 +390,49 @@ header nav ul li a {
     line-height: 1.6; /* Line height for better readability */
     text-align: left;
 }
+/* This is the beggining of the Footer Section Styling */
+footer {
+    background-color: #0C1B2A; 
+    padding: 20px 0; /* Padding around the content */
+    color: white; /* White text color */
+    position: relative; /* Added to position the text absolutely */
+}
+
+footer section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 10px; /* Reduced padding inside the section */
+}
+
+footer img {
+    height: 40px; /* Adjusted image height */
+    margin-left: -100px; /* Reduced margin from the left */
+}
+
+footer .social-icons {
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Reduced gap between icons */
+    margin-right: -100px; /* Reduced margin from the right */
+}
+
+footer .social-icons i {
+    font-size: 1.5em;
+    color: white; /* White color for the icons */
+    cursor: pointer; /* Change cursor to pointer */
+}
+
+footer p {
+    margin: 0;
+    font-size: 16px;
+    color: #888; /* Used light grey color for the text */
+    position: absolute; /* Position the text absolutely */
+    bottom: 10px; /* Position the text at the bottom */
+    left: 50%;
+    transform: translateX(-50%); /* Center the text horizontally */
+}
+
+/* I am pround of myself for the work done in this project. This is a huge milestone and I hope to learn more as I interact with these stylings.*/
