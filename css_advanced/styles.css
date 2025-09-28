@@ -126,3 +126,50 @@ header nav ul li a {
     font-size: 43px;
     font-weight: bold;
 }
+
+/* This is the css code for the Quotes section*/
+
+/* Quotes section styling */
+.quote-section {
+    background-color: #C271FF; /* Purple background */
+    padding: 50px 20px; /* Padding around the content */
+    text-align: center; /* Center align the text */
+    color: white; /* White text color */
+}
+
+.quote-section .quote-content {
+    display: flex; /* Flexbox for alignment */
+    align-items: center; /* Center items vertically */
+    max-width: 800px; /* Maximum width of the quote content */
+    margin: 0 auto; /* Center the content */
+}
+
+.quote-section .quote-content img {
+    border-radius: 50%; /* Circular image */
+    width: 100px; /* Image width */
+    height: 100px; /* Image height */
+    margin-right: 20px; /* Space to the right of the image */
+}
+
+.quote-section .quote-text {
+    text-align: left; /* Left align the text */
+}
+
+.quote-section blockquote {
+    font-size: 1.2em; /* Font size for the quote */
+    font-style: italic; /* Italic style for the quote */
+    margin: 0 0 10px 0; /* Margin around the quote */
+}
+
+.quote-section h3 {
+    font-size: 1.1em; /* Font size for the person's name */
+    margin: 5px 0; /* Margin around the name */
+    color: white;
+}
+
+.quote-section p {
+    font-size: 1em; /* Font size for the title */
+    margin: 0; /* No margin around the title */
+    font-style: italic; /* Italic style for the title */
+    opacity: 0.8; /* Slightly transparent */
+}
