@@ -173,3 +173,115 @@ header nav ul li a {
     font-style: italic; /* Italic style for the title */
     opacity: 0.8; /* Slightly transparent */
 }
+/* This is the end of the Quote section styling*/
+/*This is the beggining of the video section styling*/
+.video-section {
+    background-color: #fff;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.video-section h2 {
+    font: size 43px;
+    font-weight: lighter;
+    margin-bottom: 40px;
+}
+
+.video-section h2 span {
+    color: #C271FF;
+    font-weight: bold;
+}
+
+.video-cards {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.video-card {
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    padding: 20px;
+    width: 22%;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    margin-bottom: 20px;
+    text-align: left;
+    position: relative; /* This is the position relative for overlay */
+}
+
+.video-card img {
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+.video-card .play-overlay {
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 85px;
+    height: 85px;
+    background: url('Images/play.png') no-repeat center center;
+    background-size: cover;
+}
+
+.video-card h3 {
+    font-size: 21px;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.video-card p {
+    font-size: 0.9em;
+    color: rgba(7, 22, 41, 0.5016);
+}
+
+.video-card .author {
+    display: flex;
+    align-items: center;
+    margin-top: 15px;
+}
+
+.video-card .author img {
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+}
+/*Included a little more modification from here*/
+.video-card .author h4 {
+    margin: 0;
+    font-size: 19px;
+    font-weight: bolder;
+    color: #C271FF; /* Updated color to match design */
+}
+
+.video-card .stars {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.video-card .stars div {
+    color: #C271FF; /* Updated color to match design */
+    margin-right: 2px;
+}
+
+.video-card .duration {
+    font-size: 0.9em;
+    color: #C271FF; /* Updated color to match design */
+    text-align: right;
+    margin-top: 5px;
+}
+
+.video-card .duration:before {
+    content: ''; /* Removed the dot before the duration */
+    margin-right: 5px;
+}
+
+.video-card .stars-duration-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+}
