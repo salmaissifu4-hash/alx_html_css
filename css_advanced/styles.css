@@ -346,3 +346,47 @@ header nav ul li a {
     cursor: pointer;
 }
 /*This is the end of the Membership Section styling*/
+
+/* This is the beggining of the FAQ Section Styling */
+/* FAQ Section Styling */
+.faq-section {
+    padding: 50px 20px; /* Padding around the content */
+    text-align: center; /* Center align the text */
+   }
+
+.faq-section h2 {
+    font-size: 80px;
+    margin-bottom: 40px;
+    color: rgba(7, 22, 41, 1);
+    font-weight: 300; /* The font here is light */
+}
+
+.faq-cards {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.faq-card {
+    background-color: transparent; /* Background color for FAQ cards */
+    color: #333; /* Text color inside cards */
+    width: 45%; /* Width of each card */
+    margin-bottom: 20px;
+}
+
+.faq-card h3 {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+    color: rgba(7, 22, 41, 1); /* Text color for card headers */
+    font-weight: bold;
+    text-align: left;
+}
+
+.faq-card p {
+    font-size: 0.9em;
+    color: rgba(7, 22, 41, 0.5016); /* Text color for card paragraphs */
+    line-height: 1.6; /* Line height for better readability */
+    text-align: left;
+}
