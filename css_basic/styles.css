@@ -1,0 +1,101 @@
+/* Apply flexbox properties */
+body, main {
+    display: flex;
+}
+
+/* Flex direction for body and main */
+body {
+    flex-direction: column;
+}
+
+main {
+    flex-direction: row;
+    flex: auto;
+}
+
+/* Flex properties for the content within main */
+article {
+    flex: 2;
+}
+
+aside {
+    flex: 1;
+}
+
+/* Ensure proper scroll behavior */
+article, aside {
+    overflow-y: auto;
+}
+
+/*General body styling*/
+body {
+        background-color: #f9f9f9;
+
+}
+/* Header styling*/
+header {
+    background-color: #4caf50;
+    color: white;
+
+}
+header ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+}
+header ul li {
+    margin-right: 20px;
+}
+header ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+
+}
+
+/*Article styling*/
+article {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+article h1, article h2, article h3 {
+    color: #4caf50;
+}
+article p {
+    line-height: 1.6;
+}
+/*Table styling*/
+table {
+    width: 75%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+table, th, td {
+    border: 2px solid #ddd;
+}
+th, td {
+    padding: 8px;
+    text-align: left;
+}
+
+/*aside styling*/
+aside {
+    background-color: #f2f2f2;
+    padding: 20;
+    border-radius: 8px;
+    margin-left: 20px;
+}
+
+/*footer styling*/
+footer {
+    background-color: #4caf50;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    width: 100%;
+    bottom: 0;
+}
