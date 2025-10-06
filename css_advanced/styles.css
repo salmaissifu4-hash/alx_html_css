@@ -1,0 +1,438 @@
+@font-face {
+    font-family: 'Source Sans Pro';
+    src: url('fonts/SourceSansPro-Regular.woff2') format('woff2'),
+         url('fonts/SourceSansPro-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+/*adjusted each section's font accordingly*/
+body {
+    margin: 0;
+    font-family: 'Source Sans Pro', Arial, sans-serif;
+}
+
+.background-container {
+    background-image: url('Images/image.png'); /* Remember to comfirm the accuracy of the image path*/
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
+}
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: transparent;
+}
+
+header nav img {
+    height: 40px;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+header nav ul li {
+    display: inline;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: #fff; /* Updated color to white */
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.background-image {
+    text-align: center;
+    padding: 100px 20px;
+    position: relative;
+    background: none; /* Remove background from this section */
+}
+
+.text-content {
+    position: relative;
+    z-index: 2;
+}
+
+.text-content h1 {
+    font-size: 160px;
+    margin: 0;
+}
+
+.text-content .slogan {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin: 20px 0;
+}
+
+.text-content .slogan span {
+    font-size: 21px;
+    font-weight: bold;
+}
+
+.text-content button {
+    padding: 10px 20px;
+    font-size: 19px;
+    font-weight:lighter;
+    margin-top: 20px;
+    background-color: #C271FF;
+    color: white;
+    border: none;
+    border-radius: 22px;
+    cursor: pointer;
+}
+
+.pro-section {
+    margin-top: 50px;
+}
+
+.pro-section h2 {
+    font-size: 2em;
+}
+
+.pro-cards {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.pro-card img {
+    height: 80px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.pro-card h3 {
+    margin: 10px 0 5px;
+    font-size: 1.5em;
+}
+
+.pro-card p {
+    margin: 0;
+    font-size: 1.3em;
+    
+}
+
+.highlight {
+    color: #C271FF;
+    font-size: 43px;
+    font-weight: bold;
+}
+
+/* This is the css code for the Quotes section*/
+
+/* Quotes section styling */
+.quote-section {
+    background-color: #C271FF; /* Purple background */
+    padding: 50px 20px; /* Padding around the content */
+    text-align: center; /* Center align the text */
+    color: white; /* White text color */
+}
+
+.quote-section .quote-content {
+    display: flex; /* Flexbox for alignment */
+    align-items: center; /* Center items vertically */
+    max-width: 800px; /* Maximum width of the quote content */
+    margin: 0 auto; /* Centered the content */
+}
+
+.quote-section .quote-content img {
+    border-radius: 50%; /* Circular image */
+    width: 100px; /* Image width */
+    height: 100px; /* Image height */
+    margin-right: 80px; /* Space to the right of the image */
+    margin-left: -200px;
+}
+
+
+.quote-section .quote-text {
+    text-align: left; /* Left aligned the text */
+}
+
+.quote-section blockquote {
+    font-size: 1.2em; /* Font size for the quote. Remember to convert this and all other fonts to pixel or choose a consistent format */
+    font-style: italic; /* Italic style for the quote */
+    margin: 0 0 10px 0; /* Margin around the quote */
+}
+
+.quote-section h3 {
+    font-size: 1.1em; /* Font size for the person's name */
+    margin: 5px 0; /* Margin around the name */
+    color: white;
+}
+
+.quote-section p {
+    font-size: 1em; /* Font size for the title */
+    margin: 0; /* No margin around the title */
+    font-style: italic; /* Italic style for the title */
+    opacity: 0.8; /* Slightly transparent */
+}
+/* This is the end of the Quote section styling*/
+/*This is the beggining of the video section styling*/
+.video-section {
+    background-color: #fff;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.video-section h2 {
+    font: size 43px;
+    font-weight: lighter;
+    margin-bottom: 40px;
+}
+
+.video-section h2 span {
+    color: #C271FF;
+    font-weight: bold;
+}
+
+.video-cards {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.video-card {
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    padding: 20px;
+    width: 22%;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    margin-bottom: 20px;
+    text-align: left;
+    position: relative; /* This is the position relative for overlay */
+}
+
+.video-card img {
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+.video-card .play-overlay {
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 85px;
+    height: 85px;
+    background: url('Images/play.png') no-repeat center center;
+    background-size: cover;
+}
+
+.video-card h3 {
+    font-size: 21px;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.video-card p {
+    font-size: 0.9em;
+    color: rgba(7, 22, 41, 0.5016);
+}
+
+.video-card .author {
+    display: flex;
+    align-items: center;
+    margin-top: 15px;
+}
+
+.video-card .author img {
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+}
+/*Included a little more modification from here*/
+.video-card .author h4 {
+    margin: 0;
+    font-size: 19px;
+    font-weight: bolder;
+    color: #C271FF; /* Updated color to match design */
+}
+
+.video-card .stars {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.video-card .stars div {
+    color: #C271FF; /* Updated color to match design */
+    margin-right: 2px;
+}
+
+.video-card .duration {
+    font-size: 0.9em;
+    color: #C271FF; /* Updated color to match design */
+    text-align: right;
+    margin-top: 5px;
+}
+
+.video-card .duration:before {
+    margin-right: 5px;
+}
+
+.video-card .stars-duration-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+}
+
+/* This is the beggining of Membership section styling */
+.membership-section {
+    background-color: rgba(7, 22, 41, 1); /* Adjusted according tothe Figma Background color */
+    padding: 50px 80px; /* Ajust the padding around the content until to the content fits */
+    text-align: center; /* Center align the text */
+    color: white; /* White text color */
+}
+
+.membership-section h2 {
+    font-size: 43px;
+    margin-bottom: 40px;
+    color: white;
+    font-weight: 300;
+}
+
+.membership-section h2 span {
+    color: #C271FF; /* Highlight color */
+    font-weight: bold;
+}
+
+.membership-cards {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 40px;
+}
+
+.membership-card {
+    text-align: center;
+    padding: 50px;
+}
+
+.membership-card img {
+    width: 50px; /* Image size */
+    margin-bottom: 20px; /* Space below the image */
+}
+
+.membership-card h3 {
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    color: white;
+    
+}
+
+.membership-card p {
+    font-size: 19px;
+    font-weight: normal;
+    color: #bbb; /* Lighter text color */
+}
+
+.membership-section button {
+    padding: 10px 20px;
+    font-size: 1.2em;
+    background-color: #C271FF;
+    color: white;
+    border: none;
+    border-radius: 22px;
+    cursor: pointer;
+}
+/*This is the end of the Membership Section styling*/
+
+/* This is the beggining of the FAQ Section Styling */
+.faq-section {
+    padding: 50px 20px; /* Padding around the content */
+    text-align: center; /* Center align the text */
+   }
+
+.faq-section h2 {
+    font-size: 80px;
+    margin-bottom: 40px;
+    color: rgba(7, 22, 41, 1);
+    font-weight: 300; /* The font here is light */
+}
+
+.faq-cards {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.faq-card {
+    background-color: transparent; /* Background color for FAQ cards */
+    color: #333; /* Text color inside cards */
+    width: 45%; /* Width of each card */
+    margin-bottom: 20px;
+}
+
+.faq-card h3 {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+    color: rgba(7, 22, 41, 1); /* Text color for card headers */
+    font-weight: bold;
+    text-align: left;
+}
+
+.faq-card p {
+    font-size: 0.9em;
+    color: rgba(7, 22, 41, 0.5016); /* Text color for card paragraphs */
+    line-height: 1.6; /* Line height for better readability */
+    text-align: left;
+}
+/* This is the beggining of the Footer Section Styling */
+footer {
+    background-color: #0C1B2A; 
+    padding: 20px 0; /* Padding around the content */
+    color: white; /* White text color */
+    position: relative; /* Added to position the text absolutely */
+}
+
+footer section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 10px; /* Reduced padding inside the section */
+}
+
+footer img {
+    height: 40px; /* Adjusted image height */
+    margin-left: -100px; /* Reduced margin from the left */
+}
+
+footer .social-icons {
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Reduced gap between icons */
+    margin-right: -100px; /* Reduced margin from the right */
+}
+
+footer .social-icons i {
+    font-size: 1.5em;
+    color: white; /* White color for the icons */
+    cursor: pointer; /* Change cursor to pointer */
+}
+
+footer p {
+    margin: 0;
+    font-size: 16px;
+    color: #888; /* Used light grey color for the text */
+    position: absolute; /* Position the text absolutely */
+    bottom: 10px; /* Position the text at the bottom */
+    left: 50%;
+    transform: translateX(-50%); /* Center the text horizontally */
+}
+
+/* I am pround of myself for the work done in this project. This is a huge milestone and I hope to learn more as I interact with these stylings.*/
